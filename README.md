@@ -24,7 +24,6 @@ When you design interfaces that are inherently testable, your system becomes mod
 >
 > If you're interested in a simple and scalable **architectural strategy for complex systems**, check out the companion project [**``Recursive Boxes``**](https://github.com/kartikg33/recursive-boxes).
 
-
 ## What is TIDD?
 
 **TIDD** is a design and development philosophy that unifies the best of **Test-Driven Development (TDD)** and **Interface-Driven Design (IDD)** while addressing their shortcomings.
@@ -34,9 +33,10 @@ When you design interfaces that are inherently testable, your system becomes mod
 
 **TIDD fixes both** by demanding that **every interface is testable** and that **every test is bound to a versioned interface, not an implementation**.
 
-## Quick Links
-- [🧪 **``TIDD Examples``** (coming soon!)](./examples/)
-- [📦 **``Recursive Boxes``** (the companion architectural strategy for complex systems)](https://github.com/kartikg33/recursive-boxes)
+- **Fixes IDD’s weakness** by ensuring that interfaces are always testable against real use cases.  
+- **Fixes TDD’s weakness** by ensuring tests are written against versioned contracts, not against however the latest code has been implemented.
+
+This results in **modular, resilient codebases** with a **vastly reduced maintenance cost**.
 
 ## Core Principles
 
@@ -50,14 +50,10 @@ When you design interfaces that are inherently testable, your system becomes mod
     - If you can’t define a stable, versioned interface for your tests, you should go back to the drawing board.
     - Code is volatile but Interfaces are static. That means code implementations can be changed freely without impacting the test cases so long as the interface remains intact.
 
-## Why TIDD?
-
-- **Fixes IDD’s weakness** by ensuring that interfaces are always testable against real use cases.  
-- **Fixes TDD’s weakness** by ensuring tests are written against versioned contracts, not against however the latest code has been implemented.
-
-This results in **modular, resilient, future-proof codebases**.
-
 ## Practical Workflow Example
+
+> [!TIP]
+> See the [`examples/`](./examples/) folder for more information.
 
 1. **Define the interface contract**  
    Example:
