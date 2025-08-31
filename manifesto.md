@@ -1,3 +1,7 @@
+> Copyright (c) 2025 Kartik Gohil
+> Licensed under the Apache License, Version 2.0
+> See LICENSE file for details.
+
 # The TIDD Manifesto
 
 ## What is TIDD?
