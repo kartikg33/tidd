@@ -1,4 +1,4 @@
-<h2 align="center">Testable-Interface Driven Development (TIDD)</h2>
+<h1 align="center">Testable-Interface Driven Development (TIDD)</h1>
 
 ```mermaid
 block-beta
@@ -12,7 +12,7 @@ block-beta
     end
 ```
 
-### TL;DR
+## TL;DR
 * **``Interfaces are testable contracts.``**
 * **``Tests are proof of good interface design.``**
 * **``Implementations are interchangeable so long as they adhere to the contract.``**
@@ -25,7 +25,7 @@ When you design interfaces that are inherently testable, your system becomes mod
 > If you're interested in a simple and scalable **architectural strategy for complex systems**, check out the companion project [**``Recursive Boxes``**](https://github.com/kartikg33/recursive-boxes).
 
 
-### What is TIDD?
+## What is TIDD?
 
 **TIDD** is a design and development philosophy that unifies the best of **Test-Driven Development (TDD)** and **Interface-Driven Design (IDD)** while addressing their shortcomings.
 
@@ -34,11 +34,11 @@ When you design interfaces that are inherently testable, your system becomes mod
 
 **TIDD fixes both** by demanding that **every interface is testable** and that **every test is bound to a versioned interface, not an implementation**.
 
-### Quick Links
+## Quick Links
 - [🧪 **``TIDD Examples``** (coming soon!)](./examples/)
 - [📦 **``Recursive Boxes``** (the companion architectural strategy for complex systems)](https://github.com/kartikg33/recursive-boxes)
 
-### Core Principles
+## Core Principles
 
 1. **Every Interface Must Come With Tests; Poor Tests Reveal Poor Design.**
     - If you can’t write real-world test cases for an interface, or if the tests are weak and meaningless, the interface likely needs redesigning.
@@ -50,7 +50,7 @@ When you design interfaces that are inherently testable, your system becomes mod
     - If you can’t define a stable, versioned interface for your tests, you should go back to the drawing board.
     - Code is volatile but Interfaces are static. That means code implementations can be changed freely without impacting the test cases so long as the interface remains intact.
 
-### Why TIDD?
+## Why TIDD?
 
 - **Fixes IDD’s weakness** by ensuring that interfaces are always testable against real use cases.  
 - **Fixes TDD’s weakness** by ensuring tests are written against versioned contracts, not against however the latest code has been implemented.
@@ -79,7 +79,7 @@ This results in **modular, resilient, future-proof codebases**.
    * Implementations can change without breaking tests, as long as they respect the contract
    * The **tests remain the same** no matter which implementation is used.
 
-### Contributing
+## Contributing
 Here's how you can contribute:
 * Add language-specific examples in the [``examples/``](./examples/) directory.
 * Build tooling for interface + test co-definition
