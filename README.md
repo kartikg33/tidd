@@ -1,6 +1,6 @@
 <h1 align="center">Testable-Interface Driven Development (TIDD)</h1>
 
-<pre class="mermaid" align="center">
+```mermaid
 block-beta
     columns 5
     test["Test Suite"] space ModuleA space ModuleB
@@ -10,9 +10,7 @@ block-beta
         interface["Testable Interface (i.e. The Contract)"]
         impl["Concrete Implementation (i.e. The Code)"]
     end
-</pre>
-
-
+```
 
 **TIDD** is a software development approach that unifies the best of *TDD* (Test-Driven Development) and *IDD* (Interface-Driven Development).  
 
