@@ -1,4 +1,4 @@
-<h2 align="center">Testable-Interface Driven Development (TIDD)</h1>
+<h2 align="center">Testable-Interface Driven Development (TIDD)</h2>
 
 ```mermaid
 block-beta
