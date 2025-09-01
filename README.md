@@ -22,7 +22,7 @@ When you design interfaces that are inherently testable, your system becomes mod
 > [!TIP]
 > **TIDD** is focused on **module-level design**, ensuring that every interface is testable and that every test targets an interface, not an implementation. 
 >
-> If you're interested in a simple and scalable **architectural strategy for complex systems**, check out the companion project [**``Recursive Boxes``**](https://github.com/kartikg33/recursive-boxes).
+> If you're interested in a **larger architectural strategy for complex systems**, check out the companion project: [**Recursive Boxes**](https://github.com/kartikg33/recursive-boxes).
 
 ## What is TIDD?
 
@@ -33,8 +33,8 @@ When you design interfaces that are inherently testable, your system becomes mod
 
 **TIDD fixes both** by demanding that **every interface is testable** and that **every test is bound to a versioned interface, not an implementation**.
 
-- **Fixes IDD’s weakness** by ensuring that interfaces are always testable against real use cases.  
-- **Fixes TDD’s weakness** by ensuring tests are written against versioned contracts, not against however the latest code has been implemented.
+- **TIDD fixes IDD’s weakness** by ensuring that interfaces are always testable against real use cases.  
+- **TIDD fixes TDD’s weakness** by ensuring tests are written against versioned contracts, not against however the latest code has been implemented.
 
 This results in **modular, resilient codebases** with a **vastly reduced maintenance cost**.
 
