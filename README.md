@@ -32,6 +32,12 @@ When you define formal specifications that machines can understand, your system 
 > [!TIP]
 > **SDD** is focused on **specification-first design**, ensuring that every module's behavior is formally specified before implementation. 
 >
+> **Quick Links:**
+> - 📖 [Migration Guide](./MIGRATION.md) - Transition from TIDD to SDD
+> - 🚀 [Quick Reference](./QUICKREF.md) - Common patterns and examples
+> - 💡 [MCP Example](./examples/mcp-example.md) - Detailed MCP guide
+> - 🔨 [Working Example](./examples/mcp-calculate-total/) - Runnable code
+>
 > If you're interested in a **larger architectural strategy for complex systems**, check out the companion project: [**Recursive Boxes**](https://github.com/kartikg33/recursive-boxes).
 
 ## What is SDD?
@@ -378,12 +384,25 @@ Additional SDD-specific tooling can:
 
 ## Getting Started
 
+### New to SDD?
+
 1. **Start small**: Pick one module to specify
-2. **Choose a format**: Use a standard like OpenAPI or JSON Schema
-3. **Write behaviors**: Include concrete examples
-4. **Generate tests**: Use existing tools or write a simple generator
-5. **Implement**: Human or AI, validated against spec
-6. **Iterate**: Refine spec based on implementation learnings
+2. **Use MCP format**: JSON Schema-based, AI-native
+3. **See the example**: Check out [`examples/mcp-calculate-total/`](./examples/mcp-calculate-total/)
+4. **Write your spec**: Define inputs, outputs, constraints
+5. **Write contract tests**: Implementation-agnostic validations
+6. **Implement**: Human or AI, validated against spec
+7. **Iterate**: Refine spec based on learnings
+
+### Coming from TIDD?
+
+See the [Migration Guide](./MIGRATION.md) for step-by-step instructions on transitioning from TIDD to SDD.
+
+### Resources
+
+- **[Quick Reference](./QUICKREF.md)**: Common patterns, JSON Schema examples, best practices
+- **[MCP Example Guide](./examples/mcp-example.md)**: Detailed explanation of MCP for SDD
+- **[Working Example](./examples/mcp-calculate-total/)**: Complete, runnable implementation
 
 ## Contributing
 
@@ -393,16 +412,26 @@ Here's how you can contribute:
 * Create spec templates for common patterns
 * Share your SDD workflow and learnings
 * Develop AI integration patterns for SDD
+* Improve documentation and guides
 
 ## Migration from TIDD
 
-If you're using TIDD:
+Already using TIDD? See the comprehensive [Migration Guide](./MIGRATION.md) for:
 
-1. **Extract specs from interfaces**: Convert interface definitions to formal specs
-2. **Add behavior examples**: Document expected behaviors from existing tests
-3. **Add constraints**: Formalize validation rules
-4. **Generate tests**: Create test generators from specs
-5. **Validate**: Ensure existing code satisfies new specs
+- Step-by-step migration process
+- Before/after code examples
+- Key differences between TIDD and SDD
+- Migration checklist
+- Common pitfalls and how to avoid them
+- Success metrics
+
+**Quick summary:**
+1. **Extract specs from interfaces**: Convert to MCP JSON Schema
+2. **Add behavior examples**: Document expected behaviors
+3. **Add constraints**: Formalize validation rules in schema
+4. **Convert tests**: Make them implementation-agnostic
+5. **Add schema validation**: Use AJV or similar
+6. **Validate**: Ensure existing code passes new contract tests
 
 ---
 
