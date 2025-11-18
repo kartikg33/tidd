@@ -1,0 +1,51 @@
+{
+  "name": "calculate_total",
+  "description": "Calculate total price with tax and optional discount",
+  "version": "1.0.0",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "price": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Base price in dollars"
+      },
+      "taxRate": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "Tax rate as decimal (e.g., 0.08 for 8%)"
+      },
+      "discount": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "default": 0,
+        "description": "Discount rate as decimal (e.g., 0.10 for 10% off)"
+      }
+    },
+    "required": ["price", "taxRate"],
+    "additionalProperties": false
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "total": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Final total after discount and tax"
+      },
+      "breakdown": {
+        "type": "object",
+        "properties": {
+          "originalPrice": { "type": "number" },
+          "discountAmount": { "type": "number" },
+          "priceAfterDiscount": { "type": "number" },
+          "taxAmount": { "type": "number" },
+          "finalTotal": { "type": "number" }
+        }
+      }
+    },
+    "required": ["total"]
+  }
+}
